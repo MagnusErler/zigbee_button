@@ -13,7 +13,7 @@ TB-03F module from AiThinker
 ![TB-03F](image/TB-03F.png)
 
 2. connect TB-03F to computer and find which port the TB-03F is connected to with `ls /dev/tty*` (mine is `/dev/ttyUSB1`)
-3. go to programmer-directory and run `python TlsrComProg.py -p <port> -t5000 we 0 uart2swire.bin` with raplecing `<port>` with the port of the TB-03F found in previous step. Output:
+3. go to programmer-directory and run `python TlsrComProg.py -p <port> -t5000 we 0 uart2swire.bin` with replacing `<port>` with the port of the TB-03F found in previous step. Output:
 
 ```
 ================================================
@@ -51,6 +51,8 @@ Credits to [TLSRPGM](https://github.com/pvvx/TLSRPGM)
 SWS     <-->    SWM (D4))
 +3.3V  <-->    +3.3V
 GND     <-->    GND
+
+Credits to [tuyaZigbee](https://github.com/doctor64/tuyaZigbee)
 
 ##### Test connection
 
@@ -101,5 +103,3 @@ REGISTERS:
 000060: 00 00 c0 ff 1f 37 20 00 02 00 02 00 01 02 1f 00 
 000070: 00 04 00 04 00 00 00 00 00 00 00 64 00 02 62 55 
 ```
-
-Credits to [tuyaZigbee](https://github.com/doctor64/tuyaZigbee)
