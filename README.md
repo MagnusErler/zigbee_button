@@ -103,3 +103,7 @@ REGISTERS:
 000060: 00 00 c0 ff 1f 37 20 00 02 00 02 00 01 02 1f 00 
 000070: 00 04 00 04 00 00 00 00 00 00 00 64 00 02 62 55 
 ```
+
+##### Write flash
+
+Please note that the actual firmware starts from address 0x8000. To write new firmware execute `python TlsrPgm.py -w -t 1 -a 20 -s -p/dev/ttyUSB0 we 0x8000 TuyaLight.bin` You should get output
