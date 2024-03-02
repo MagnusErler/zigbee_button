@@ -9,7 +9,9 @@ TB-03F module from AiThinker
 #### Write programmer (Linux)
 
 1. connect the SWS pin to pin 2 of CH340 of the TB-03F
-   ![TB-03F](image/TB-03F.png)
+
+![TB-03F](image/TB-03F.png)
+
 2. connect TB-03F to computer and find which port the TB-03F is connected to with `ls /dev/tty*` (mine is `/dev/ttyUSB1`)
 3. go to programmer-directory and run `python TlsrComProg.py -p <port> -t5000 we 0 uart2swire.bin` with raplecing `<port>` with the port of the TB-03F found in previous step. Output:
 
@@ -42,11 +44,13 @@ Credits to [TLSRPGM](https://github.com/pvvx/TLSRPGM)
 #### Flashing
 
 1. connect ZT3L to TB-03F
-   ![ZT3L](image/ZT3L.png)
-   ![TB-03F_1](image/TB-03F_1.png)
-   SWS     <-->    SWM (D4))
-   +3.3V  <-->    +3.3V
-   GND     <-->    GND
+
+![ZT3L](image/ZT3L.png)
+![TB-03F_1](image/TB-03F_1.png)
+
+SWS     <-->    SWM (D4))
++3.3V  <-->    +3.3V
+GND     <-->    GND
 
 ##### Test connection
 
