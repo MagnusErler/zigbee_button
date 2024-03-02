@@ -13,7 +13,7 @@ TB-03F module from AiThinker
 ![TB-03F](image/TB-03F.png)
 
 2. connect TB-03F to computer and find which port the TB-03F is connected to with `ls /dev/tty*` (mine is `/dev/ttyUSB1`)
-3. go to programmer-directory and run `python TlsrComProg.py -p <port> -t5000 we 0 uart2swire.bin` with replacing `<port>` with the port of the TB-03F found in previous step. Output:
+3. go to *programmer*-directory and run `python TlsrComProg.py -p <port> -t5000 we 0 uart2swire.bin` with replacing `<port>` with the port of the TB-03F found in previous step. Output:
 
 ```
 ================================================
@@ -106,4 +106,4 @@ REGISTERS:
 
 ##### Write flash
 
-Please note that the actual firmware starts from address 0x8000. To write new firmware execute `python TlsrPgm.py -w -t 1 -a 20 -s -p/dev/ttyUSB0 we 0x8000 TuyaLight.bin` You should get output
+Please note that the actual firmware starts from address 0x8000. To write new firmware execute `python TlsrPgm.py -w -t 1 -a 20 -s -p/dev/ttyUSB0 we 0x8000 tuyaSwitch-1button.bin` You should get output
