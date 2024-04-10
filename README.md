@@ -49,7 +49,9 @@ Credits to [TLSRPGM](https://github.com/pvvx/TLSRPGM)
 ![TB-03F_1](image/TB-03F_1.png)
 
 SWS     <-->    SWM (D4))
+
 +3.3V  <-->    +3.3V
+
 GND     <-->    GND
 
 Credits to [tuyaZigbee](https://github.com/doctor64/tuyaZigbee)
